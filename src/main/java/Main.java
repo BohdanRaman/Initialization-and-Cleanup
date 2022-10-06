@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.Random;
+import java.util.random.RandomGenerator;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,17 +30,37 @@ public class Main {
         Tank T90 = new Tank(false, true);
         T90.cleanUpTank();
         T90.fillingUpTank();
-        new Tank(false,true);
+        new Tank(false, true);
         System.gc();
+        System.out.println();
 
         /* Task 14*/
         System.out.println("Task 14");
         System.out.println(InitializedFields.string + " " + InitializedFields.s);
         InitializedFields.printStaticFields();
+        System.out.println();
 
         /* Task 19*/
         System.out.println("Task 19");
         MethodForStringArray stringArray = new MethodForStringArray();
-        //    System.out.println(Arrays.toString(stringArray.getArray("string")));
+        System.out.println(Arrays.toString((stringArray.getArray("I", "LOVE", "MY", "LIFE"))) + "\n");
+
+        /* Task 22*/
+        System.out.println("Task 22");
+        System.out.println(Arrays.toString(EnumClass.Money.values()) + "\n");
+        System.out.println(EnumClass.getMoney(EnumClass.Money.DOLLAR));
+        System.out.println(EnumClass.getMoney(EnumClass.Money.EURO));
+        System.out.println(EnumClass.getMoney(EnumClass.Money.POUND));
+        System.out.println(EnumClass.getMoney(EnumClass.Money.FRANC));
+        System.out.println(EnumClass.getMoney(EnumClass.Money.JENA));
+        System.out.println(EnumClass.getMoney(EnumClass.Money.YUAN) + "\n");
+        for (EnumClass.Money money : EnumClass.Money.values()) {
+            System.out.println(money + ": " + money.ordinal());
+            System.out.println();
+
+
+        }
+
     }
 }
+

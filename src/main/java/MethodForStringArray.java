@@ -5,9 +5,11 @@
 
 public class MethodForStringArray {
 
-    public void getArray (String [] x){
-        String [] vararg;
+    public String[] getArray(String... strings) {
 
+        for (String str : strings) {
+            System.out.println(str);
+        }
+        return strings;
     }
-
 }

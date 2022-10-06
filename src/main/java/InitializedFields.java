@@ -5,7 +5,7 @@
  */
 
 public class InitializedFields {
-    public static String s = "Cool";
+    public static String s = "is Cool";
     public static String string;
 
     static {
