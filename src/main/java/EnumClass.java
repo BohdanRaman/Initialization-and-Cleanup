@@ -18,9 +18,7 @@ public class EnumClass {
     }
 
     public static Money getMoney(Money bablo) {
-        Money money = Money.FRANC;
-
-        switch (money) {
+        switch (bablo) {
             case DOLLAR -> System.out.println("This money is USA ");
             case EURO -> System.out.println("This money is European countries ");
             case POUND -> System.out.println("This money is British kingdom");
