@@ -11,5 +11,6 @@ public class MethodForStringArray {
             System.out.println(str);
         }
         return strings;
+        /* if I put null, I'll get NullPointerException. But I can cast null to String*/
     }
 }

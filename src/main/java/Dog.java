@@ -8,12 +8,20 @@
 
 public class Dog {
 
-    public void toBark(int str, double str1) {
-        str = Integer.parseInt(String.valueOf(str));
-        str1 = Double.parseDouble(String.valueOf(str1));
+    public String toBark(int i, String str1) {
+
+        return i + " : " + str1;
     }
 
-    public void toBark(double p, int q) {
+    public String toBark(double p, String s) {
+        return p + " : " + s;
+    }
 
+    public Object toBarkNew(String srt, int i) {
+        return srt + " : " + i;
+    }
+
+    public Object toBarkNew(int i, String srt) {
+        return i + " : " + srt;
     }
 }

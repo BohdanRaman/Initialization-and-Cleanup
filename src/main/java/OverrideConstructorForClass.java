@@ -1,17 +1,18 @@
 /**
- * (1) Create a class with two (overloaded) constructors. Using this, call the
+ * Create a class with two (overloaded) constructors. Using this, call the
  * second constructor inside the first one
  */
+
 public class OverrideConstructorForClass {
     int number;
-    double age;
+    int age;
+    String s;
 
-    public OverrideConstructorForClass() {
-
+    public OverrideConstructorForClass(int number, int age, String s) {
+        this(age, number);
+        this.s = s;
     }
 
-    public OverrideConstructorForClass(int number, double age) {
-        this.number = number;
-        this.age = age;
+    public OverrideConstructorForClass(int age, int number) {
     }
 }

@@ -15,12 +15,12 @@ public class Main {
         /* Task 5,6*/
         System.out.println("Task 5,6");
         Dog dog = new Dog();
-        //  Integer integer = Integer.valueOf("rrrr");
-        Double d = new Double("5.0");
-        System.out.println(d);
-        //   System.out.println(Integer.decode("rrrr"));
-        //    System.out.println(dog.toBark("3", "3.3"));
+        System.out.println(dog.toBark(1,"GAF"));
+        System.out.println(dog.toBark(2.0, "RRR"));
 
+        Dog newDog = new Dog();
+        System.out.println(newDog.toBarkNew(10, "FRR"));
+        System.out.println(newDog.toBarkNew("AFAFAF", 100) + "\n");
 
         /* Task 7*/
         System.out.println("Task 7");
