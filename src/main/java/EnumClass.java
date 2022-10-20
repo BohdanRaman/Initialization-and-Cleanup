@@ -8,19 +8,27 @@
 
 public class EnumClass {
 
+
     enum Money {
-        DOLLAR, //USA
-        EURO,   //EUROPE
-        POUND,  //BRITISH
-        FRANC,  //SWISS
-        JENA,   //JAPAN
-        YUAN;   //CHINESE
+        DOLLAR("USA"),                //USA
+        EURO("European countries"),   //EUROPE
+        POUND("British kingdom"),     //BRITISH
+        FRANC("Switzerland"),         //SWISS
+        JENA("Japan"),                //JAPAN
+        YUAN("Chine");                //CHINESE
+
+        public String text;
+
+        Money(String text) {
+            this.text = text;
+        }
+
     }
 
     public static Money getMoney(Money bablo) {
         switch (bablo) {
-            case DOLLAR -> System.out.println("This money is USA ");
-            case EURO -> System.out.println("This money is European countries ");
+            case DOLLAR -> System.out.println("This money is USA");
+            case EURO -> System.out.println("This money is European countries");
             case POUND -> System.out.println("This money is British kingdom");
             case FRANC -> System.out.println("This money is Switzerland");
             case JENA -> System.out.println("This money is Japan");

@@ -9,8 +9,8 @@ public class Main {
         System.out.println("Task 4");
         ConstructorForTraining training = new ConstructorForTraining();
         ConstructorForTraining training1 = new ConstructorForTraining("Yes, Java is cool");
-        System.out.println(training1.s);
-        System.out.println(training.s + "\n");
+        System.out.println(training.printMessage("I added method for print text"));
+        System.out.println(training1.s + "\n");
 
         /* Task 5,6*/
         System.out.println("Task 5,6");
@@ -23,7 +23,10 @@ public class Main {
 
 
         /* Task 7*/
+        System.out.println("Task 7");
         DefaultConstructor defaultConstructor = new DefaultConstructor();
+        defaultConstructor.setAnInt(1000);
+        System.out.println(defaultConstructor.getAnInt() + "\n");
 
         /* Task 12*/
         System.out.println("Task 12");
@@ -47,18 +50,21 @@ public class Main {
 
         /* Task 22*/
         System.out.println("Task 22");
-        System.out.println(Arrays.toString(EnumClass.Money.values()) + "\n");
+       System.out.println(Arrays.toString(EnumClass.Money.values()) + "\n");
         System.out.println(EnumClass.getMoney(EnumClass.Money.DOLLAR));
         System.out.println(EnumClass.getMoney(EnumClass.Money.EURO));
         System.out.println(EnumClass.getMoney(EnumClass.Money.POUND));
         System.out.println(EnumClass.getMoney(EnumClass.Money.FRANC));
         System.out.println(EnumClass.getMoney(EnumClass.Money.JENA));
         System.out.println(EnumClass.getMoney(EnumClass.Money.YUAN) + "\n");
+
+        for (EnumClass.Money m : EnumClass.Money.values()) {
+            System.out.println(m + ": " + m.text);
+        }
+        System.out.println();
+
         for (EnumClass.Money money : EnumClass.Money.values()) {
             System.out.println(money + ": " + money.ordinal());
-            System.out.println();
-
-
         }
 
     }

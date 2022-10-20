@@ -7,13 +7,18 @@
  */
 
 public class ConstructorForTraining {
-    String s;
+  String s;
 
     public ConstructorForTraining() {
-        s = "Java is cool";
+        System.out.println("Java is cool");
     }
 
     public ConstructorForTraining(String s) {
         this.s = s;
+    }
+
+    public String printMessage(String s) {
+        return s;
+
     }
 }
