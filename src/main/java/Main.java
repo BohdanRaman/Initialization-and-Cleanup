@@ -30,10 +30,10 @@ public class Main {
 
         /* Task 12*/
         System.out.println("Task 12");
-        Tank T90 = new Tank(false, true);
+        Tank T90 = new Tank(true, true);
         T90.cleanUpTank();
         T90.fillingUpTank();
-        new Tank(false, true);
+        T90.finalize();
         System.gc();
         System.out.println();
 

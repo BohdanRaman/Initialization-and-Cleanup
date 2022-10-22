@@ -7,8 +7,8 @@
 
 public class Tank {
 
-    boolean cleanUpTank = false;
-    boolean fillingUpTank = true;
+    boolean cleanUpTank;
+    boolean fillingUpTank;
 
     public Tank(boolean cleanUpTank, boolean fillingUpTank) {
         this.cleanUpTank = cleanUpTank;
@@ -16,23 +16,19 @@ public class Tank {
     }
 
     public void cleanUpTank() {
-        cleanUpTank = false;
+       if (cleanUpTank){
+           System.out.println("Error: clean up");
+       }
     }
 
     public void fillingUpTank() {
-        fillingUpTank = true;
+       if (fillingUpTank){
+           System.out.println("Tank is full");
+       }
     }
 
-    protected void finalize() {
+    public void finalize() {
         if (cleanUpTank)
-            System.out.println("Error: clean up");
-    else {
-            System.out.println("Tank is full");
-        }
-        try {
-            super.finalize();
-        } catch (Throwable e) {
-            throw new RuntimeException(e);
-        }
+            System.out.println("Tank clean up");
     }
 }
