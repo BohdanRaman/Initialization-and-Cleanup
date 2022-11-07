@@ -7,8 +7,24 @@
 
 public class Tank {
 
-    boolean cleanUpTank;
-    boolean fillingUpTank;
+    private boolean cleanUpTank;
+    private boolean fillingUpTank;
+
+    public boolean isCleanUpTank() {
+        return cleanUpTank;
+    }
+
+    public void setCleanUpTank(boolean cleanUpTank) {
+        this.cleanUpTank = cleanUpTank;
+    }
+
+    public boolean isFillingUpTank() {
+        return fillingUpTank;
+    }
+
+    public void setFillingUpTank(boolean fillingUpTank) {
+        this.fillingUpTank = fillingUpTank;
+    }
 
     public Tank(boolean cleanUpTank, boolean fillingUpTank) {
         this.cleanUpTank = cleanUpTank;
@@ -16,15 +32,15 @@ public class Tank {
     }
 
     public void cleanUpTank() {
-       if (cleanUpTank){
-           System.out.println("Error: clean up");
-       }
+        if (cleanUpTank) {
+            System.out.println("Error: clean up");
+        }
     }
 
     public void fillingUpTank() {
-       if (fillingUpTank){
-           System.out.println("Tank is full");
-       }
+        if (fillingUpTank) {
+            System.out.println("Tank is full");
+        }
     }
 
     public void finalize() {

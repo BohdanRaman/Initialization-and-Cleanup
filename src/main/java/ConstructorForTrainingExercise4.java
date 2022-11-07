@@ -22,7 +22,7 @@ public class ConstructorForTrainingExercise4 {
     }
 
     public ConstructorForTrainingExercise4(String text) {
+        this();
         this.string = text;
     }
-
 }

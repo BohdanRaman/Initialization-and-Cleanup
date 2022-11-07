@@ -6,22 +6,22 @@
  * but in reversed order relative to each other. Verify that this works.
  */
 
-public class Dog {
+public class DogExercise5 {
 
-    public String toBark(int i, String str1) {
+    public String toBark(int i, String bark) {
 
-        return i + " : " + str1;
+        return i + " : " + bark;
     }
 
-    public String toBark(double p, String s) {
-        return p + " : " + s;
+    public String toBark(double p, String newBark) {
+        return p + " : " + newBark;
     }
 
-    public Object toBarkNew(String srt, int i) {
-        return srt + " : " + i;
+    public Object toBarkNew(String bark, int i) {
+        return bark + " : " + i;
     }
 
-    public Object toBarkNew(int i, String srt) {
-        return i + " : " + srt;
+    public Object toBarkNew(int i, String newBark) {
+        return i + " : " + newBark;
     }
 }

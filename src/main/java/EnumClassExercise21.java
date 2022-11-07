@@ -6,7 +6,7 @@
  * each case, output a description of that particular currency.
  */
 
-public class EnumClass {
+public class EnumClassExercise21 {
 
 
     enum Money {
