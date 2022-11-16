@@ -3,16 +3,16 @@
  * second constructor inside the first one
  */
 
-public class OverrideConstructorForClass {
+public class OverrideConstructorForClassExercise9 {
     int number;
     int age;
     String s;
 
-    public OverrideConstructorForClass(int number, int age, String s) {
+    public OverrideConstructorForClassExercise9(int number, int age, String s) {
         this(age, number);
         this.s = s;
     }
 
-    public OverrideConstructorForClass(int age, int number) {
+    public OverrideConstructorForClassExercise9(int age, int number) {
     }
 }

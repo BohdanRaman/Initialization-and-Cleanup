@@ -32,7 +32,7 @@ public class Main {
 
         /* Task 12*/
         System.out.println("Task 12");
-        Tank T90 = new Tank(true, true);
+        TankExercise12 T90 = new TankExercise12(true, true);
         T90.cleanUpTank();
         T90.fillingUpTank();
         T90.finalize();
@@ -41,13 +41,13 @@ public class Main {
 
         /* Task 14*/
         System.out.println("Task 14");
-        System.out.println(InitializedFields.string + " " + InitializedFields.s);
-        InitializedFields.printStaticFields();
+        System.out.println(InitializedFieldsExercise14.string + " " + InitializedFieldsExercise14.s);
+        InitializedFieldsExercise14.printStaticFields();
         System.out.println();
 
         /* Task 19*/
         System.out.println("Task 19");
-        MethodForStringArray stringArray = new MethodForStringArray();
+        MethodForStringArrayExercise19 stringArray = new MethodForStringArrayExercise19();
         System.out.println(Arrays.toString((stringArray.getArray("I", "LOVE", "MY", "LIFE"))) + "\n");
 
         /* Task 22*/

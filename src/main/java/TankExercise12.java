@@ -5,7 +5,7 @@
  * that can occur when your Tank is used.
  */
 
-public class Tank {
+public class TankExercise12 {
 
     private boolean cleanUpTank;
     private boolean fillingUpTank;
@@ -26,7 +26,7 @@ public class Tank {
         this.fillingUpTank = fillingUpTank;
     }
 
-    public Tank(boolean cleanUpTank, boolean fillingUpTank) {
+    public TankExercise12(boolean cleanUpTank, boolean fillingUpTank) {
         this.cleanUpTank = cleanUpTank;
         this.fillingUpTank = fillingUpTank;
     }

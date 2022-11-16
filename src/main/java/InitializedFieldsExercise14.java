@@ -4,12 +4,12 @@
  * Add a static method that prints both fields and demonstrates that they are both initialized before they are used.
  */
 
-public class InitializedFields {
+public class InitializedFieldsExercise14 {
     public static String s = "is Cool";
     public static String string;
 
     static {
-        string = "Java";
+        string = "Java ?";
     }
 
     public static void printStaticFields() {
