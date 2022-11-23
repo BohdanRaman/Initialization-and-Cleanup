@@ -1,5 +1,6 @@
 import my_example_clas_override_overload_constructor.ExampleClass;
 import my_example_clas_override_overload_constructor.SecondExampleClass;
+import task_21_enum.EnumMoney;
 
 import java.util.Arrays;
 
@@ -8,8 +9,9 @@ public class Main {
 
         /* Task 4*/
         System.out.println("Task 4");
-        ConstructorForTrainingExercise4 constructor = new ConstructorForTrainingExercise4("'My text' with my previous message");
+        ConstructorForTrainingExercise4 constructor = new ConstructorForTrainingExercise4("\"My text\" with my previous message");
         System.out.println(constructor.getString() + "\n");
+        /* I used  "\n" for separation output between tasks in  console. I can written empty sout.*/
 
         /* Task 5,6*/
         System.out.println("Task 5,6");
@@ -19,15 +21,19 @@ public class Main {
 
         DogExercise5 newDog = new DogExercise5();
         System.out.println(newDog.toBarkNew(10, "Bark"));
-        System.out.println(newDog.toBarkNew("Bark", 10) + "\n");
+        System.out.println(newDog.toBarkNew("Bark", 10));
+
+        System.out.println(newDog.toBarkNew(55L, 155));             // types of casting
+        System.out.println(newDog.toBarkNew(155L, 55) + "\n");       // types of casting
 
         /* Task 7*/
         System.out.println("Task 7");
         DefaultConstructorExercise7 defaultConstructor = new DefaultConstructorExercise7();
         defaultConstructor.setCount(1000);
-        System.out.println("The default constructor creates the compiler, if I can't create my own;\n" +
-                "If the no-argument constructor is created by me, he is no longer created by default.\n" +
-                "Both constructors take no arguments, but are named differently");
+        System.out.println("""
+                The default constructor creates the compiler, if I can't create my own;
+                If the no-argument constructor is created by me, he is no longer created by default.
+                Both constructors take no arguments, but are named differently""");
         System.out.println(defaultConstructor.getCount() + "\n");
 
         /* Task 12*/
@@ -52,25 +58,25 @@ public class Main {
 
         /* Task 22*/
         System.out.println("Task 22");
-        System.out.println(Arrays.toString(EnumClassExercise21.Money.values()) + "\n");
-        System.out.println(EnumClassExercise21.getMoney(EnumClassExercise21.Money.DOLLAR));
-        System.out.println(EnumClassExercise21.getMoney(EnumClassExercise21.Money.EURO));
-        System.out.println(EnumClassExercise21.getMoney(EnumClassExercise21.Money.POUND));
-        System.out.println(EnumClassExercise21.getMoney(EnumClassExercise21.Money.FRANC));
-        System.out.println(EnumClassExercise21.getMoney(EnumClassExercise21.Money.JENA));
-        System.out.println(EnumClassExercise21.getMoney(EnumClassExercise21.Money.YUAN) + "\n");
-
-        for (EnumClassExercise21.Money m : EnumClassExercise21.Money.values()) {
-            System.out.println(m + ": " + m.text);
+        System.out.println(Arrays.toString(EnumMoney.values()) + "\n");
+        for (EnumMoney money : EnumMoney.values()) {
+            System.out.println(money + ", ordinal number: " + money.ordinal());
         }
         System.out.println();
 
-        for (EnumClassExercise21.Money money : EnumClassExercise21.Money.values()) {
-            System.out.println(money + ": " + money.ordinal());
+        for (EnumMoney enumMoney : EnumMoney.values()) {
+            System.out.println(enumMoney + ": " + enumMoney.getText());
         }
+        System.out.println("--------------------------------------------------------------------------------------------");
+        System.out.println(EnumMoney.getMoney(EnumMoney.DOLLAR));
+        System.out.println(EnumMoney.getMoney(EnumMoney.EURO));
+        System.out.println(EnumMoney.getMoney(EnumMoney.POUND));
+        System.out.println(EnumMoney.getMoney(EnumMoney.FRANC));
+        System.out.println(EnumMoney.getMoney(EnumMoney.JENA));
+        System.out.println(EnumMoney.getMoney(EnumMoney.YUAN));
         System.out.println();
 
-        System.out.println("My example class" +" \n");
+        System.out.println("My example class:");
         ExampleClass example = new ExampleClass();
         ExampleClass example1 = new ExampleClass(example.getNumber(), "one");
         ExampleClass example2 = new ExampleClass("two", 1);

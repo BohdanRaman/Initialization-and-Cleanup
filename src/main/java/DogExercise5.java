@@ -9,7 +9,6 @@
 public class DogExercise5 {
 
     public String toBark(int i, String bark) {
-
         return i + " : " + bark;
     }
 
@@ -17,11 +16,20 @@ public class DogExercise5 {
         return p + " : " + newBark;
     }
 
-    public Object toBarkNew(String bark, int i) {
+    public String toBarkNew(String bark, int i) {
         return bark + " : " + i;
     }
 
-    public Object toBarkNew(int i, String newBark) {
+    public String toBarkNew(int i, String newBark) {
         return i + " : " + newBark;
     }
+
+    public String toBarkNew(int i, long l) {
+        return i + "; " + l;
+    }
+
+    public String toBarkNew(long l, int i) {
+        return l + "; " + i;
+    }
+    /* if I use primitive type long and int, I should do types of casting */
 }
