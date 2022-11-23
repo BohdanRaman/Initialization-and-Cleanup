@@ -2,6 +2,7 @@ import my_example_clas_override_overload_constructor.ExampleClass;
 import my_example_clas_override_overload_constructor.SecondExampleClass;
 import task_21_enum.EnumMoney;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -54,7 +55,8 @@ public class Main {
         /* Task 19*/
         System.out.println("Task 19");
         MethodForStringArrayExercise19 stringArray = new MethodForStringArrayExercise19();
-        System.out.println(Arrays.toString((stringArray.getArray("I", "LOVE", "MY", "LIFE"))) + "\n");
+        stringArray.getArray(new String[]{"A", "B", "C", "D"});
+        System.out.println();
 
         /* Task 22*/
         System.out.println("Task 22");
