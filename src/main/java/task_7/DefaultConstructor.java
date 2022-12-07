@@ -1,9 +1,11 @@
+package task_7;
+
 /**
  * Exercise 7: Create a class without a constructor, and then create an object of that
  * class in main( ) to verify that the default constructor is automatically synthesized.
  */
 
-public class DefaultConstructorExercise7 {
+public class DefaultConstructor {
     private int count;
 
     public int getCount() {

@@ -1,3 +1,5 @@
+package taks_4;
+
 /**
  * Exercise 3: (1) Create a class with a default constructor (one that takes no arguments)
  * that prints a message. Create an object of this class.
@@ -6,7 +8,7 @@
  * String argument and prints it along with your message.
  */
 
-public class ConstructorForTrainingExercise4 {
+public class ConstructorForTraining {
     private String string;
 
     public String getString() {
@@ -17,11 +19,11 @@ public class ConstructorForTrainingExercise4 {
         this.string = string;
     }
 
-    public ConstructorForTrainingExercise4() {
+    public ConstructorForTraining() {
         System.out.println("Java is cool");
     }
 
-    public ConstructorForTrainingExercise4(String text) {
+    public ConstructorForTraining(String text) {
         this();
         this.string = text;
     }

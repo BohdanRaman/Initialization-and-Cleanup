@@ -4,7 +4,7 @@
  * Add a static method that prints both fields and demonstrates that they are both initialized before they are used.
  */
 
-public class InitializedFieldsExercise14 {
+public class InitializedFields {
     public static String s = "is Cool";
     public static String string;
 

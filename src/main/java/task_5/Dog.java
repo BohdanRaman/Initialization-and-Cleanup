@@ -1,3 +1,5 @@
+package task_5;
+
 /**
  * Exercise 5: Create a class called Dog with an overloaded bark( ) method.
  * This method should be overloaded based on various primitive data types, and print different types of barking, howling, etc.,
@@ -6,7 +8,7 @@
  * but in reversed order relative to each other. Verify that this works.
  */
 
-public class DogExercise5 {
+public class Dog {
 
     public String toBark(int i, String bark) {
         return i + " : " + bark;
