@@ -7,11 +7,10 @@ package task_19;
 
 public class MethodForStringArray {
 
-    public String[] getArray(String... strings) {
-
-        for (String  str : strings) {
-            System.out.println(str);
-        }
-       return strings;
+    public void getArray(String... strings) {
+        if (strings != null)
+            for (String s : strings) {
+                System.out.println(s);
+            }
     }
 }

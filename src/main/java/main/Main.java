@@ -47,7 +47,7 @@ public class Main {
 
         /* Task 9*/
         System.out.println("Task 9");
-        OverrideConstructorForClass constructorForClass = new OverrideConstructorForClass(2,23);
+        OverrideConstructorForClass constructorForClass = new OverrideConstructorForClass(2, 23);
         System.out.println();
 
         /* Task 12*/
@@ -68,7 +68,8 @@ public class Main {
         /* Task 19*/
         System.out.println("Task 19");
         MethodForStringArray stringArray = new MethodForStringArray();
-        stringArray.getArray("I", "LOVE", "MY", "LIFE");
+        String[] array={"A", "B", "C"};
+        stringArray.getArray(array);
         System.out.println();
 
         /* Task 22*/
