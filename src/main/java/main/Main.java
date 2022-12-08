@@ -1,8 +1,6 @@
-import my_example_clas_override_overload_constructor.ExampleClass;
-import my_example_clas_override_overload_constructor.SecondExampleClass;
+
 import task_21_enum.EnumMoney;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -78,17 +76,6 @@ public class Main {
         System.out.println(EnumMoney.getMoney(EnumMoney.YUAN));
         System.out.println();
 
-        System.out.println("My example class:");
-        ExampleClass example = new ExampleClass();
-        ExampleClass example1 = new ExampleClass(example.getNumber(), "one");
-        ExampleClass example2 = new ExampleClass("two", 1);
-        System.out.println("Print method and return: " + example2.getCountMethod(1));
-        System.out.println("Print overload method and return: " + example2.getCountMethod(1, 1));
-        example.getText();
-        SecondExampleClass secondClass = new SecondExampleClass();
-        System.out.println(secondClass.getCountMethod(5, 5));
-        System.out.println(secondClass.getCountMethod(10));
-        secondClass.getText();
     }
 }
 
