@@ -1,3 +1,5 @@
+package task_12;
+
 /**
  * Create a class called Tank that can be filled and emptied, and has a
  * termination condition that it must be empty when the object is cleaned up. Write a
@@ -5,7 +7,7 @@
  * that can occur when your Tank is used.
  */
 
-public class TankExercise12 {
+public class Tank {
 
     private boolean cleanUpTank;
     private boolean fillingUpTank;
@@ -26,7 +28,7 @@ public class TankExercise12 {
         this.fillingUpTank = fillingUpTank;
     }
 
-    public TankExercise12(boolean cleanUpTank, boolean fillingUpTank) {
+    public Tank(boolean cleanUpTank, boolean fillingUpTank) {
         this.cleanUpTank = cleanUpTank;
         this.fillingUpTank = fillingUpTank;
     }
