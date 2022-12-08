@@ -1,7 +1,11 @@
+package main;
+
 import my_example_clas_override_overload_constructor.ExampleClass;
 import my_example_clas_override_overload_constructor.SecondExampleClass;
 import taks_4.ConstructorForTraining;
 import task_12.Tank;
+import task_14.InitializedFields;
+import task_19.MethodForStringArray;
 import task_21_enum.EnumMoney;
 import task_5.Dog;
 import task_7.DefaultConstructor;
@@ -57,14 +61,15 @@ public class Main {
 
         /* Task 14*/
         System.out.println("Task 14");
-        System.out.println(InitializedFields.string + " " + InitializedFields.s);
+        System.out.println(InitializedFields.s + " " + InitializedFields.string);
         InitializedFields.printStaticFields();
         System.out.println();
 
         /* Task 19*/
         System.out.println("Task 19");
         MethodForStringArray stringArray = new MethodForStringArray();
-        //  System.out.println(Arrays.toString((stringArray.getArray("I", "LOVE", "MY", "LIFE"))) + "\n");
+        stringArray.getArray("I", "LOVE", "MY", "LIFE");
+        System.out.println();
 
         /* Task 22*/
         System.out.println("Task 22");

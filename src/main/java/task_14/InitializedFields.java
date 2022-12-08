@@ -1,3 +1,5 @@
+package task_14;
+
 /**
  * Create a class with a static String field that is initialized at the point of
  * definition, and another one that is initialized by the static block.
@@ -5,11 +7,11 @@
  */
 
 public class InitializedFields {
-    public static String s = "is Cool";
+    public static String s = "Today is really good whether";
     public static String string;
 
     static {
-        string = "Java ?";
+        string = "Yes, it's true ?";
     }
 
     public static void printStaticFields() {
