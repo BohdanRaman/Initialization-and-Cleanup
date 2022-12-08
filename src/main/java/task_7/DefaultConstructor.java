@@ -8,6 +8,10 @@ package task_7;
 public class DefaultConstructor {
     private int count;
 
+    public DefaultConstructor() {
+        System.out.println("Default constructor is coll");
+    }
+
     public int getCount() {
         return count;
     }
